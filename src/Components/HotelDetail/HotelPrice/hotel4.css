@@ -1,0 +1,68 @@
+.price-de{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-container{
+    padding-top: 2rem;
+    color: var(--g2-color);
+}
+
+.price-de-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 1.5rem;
+}
+
+.price-container h4{
+   font-weight: 600;
+   color: var(--g2-color);
+}
+
+.price-de5 .price2{
+    border-top: 2px solid var(--g2-color);
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: .5rem;
+    color: var(--g2-color);
+}
+
+.price2{
+    color: var(--g-color);
+    font-size: 13px;
+}
+
+.price-de3 .price2{
+    color: var(--y-color);
+}
+
+.pay-cont{
+    position: sticky;
+    bottom: 10px;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    background: linear-gradient(to right,var(--s1-color),var(--s-color));
+    border-radius: .3rem;
+}
+
+.pay-cont p{
+    font-size: 13px;
+    color: var(--p-color);
+    font-weight: 500;
+}
+.pay-cont h5{
+    font-size: 20px;
+    color: var(--p-color);
+}
+
+.pay-cont .btn{
+    border: none;
+    color: var(--s-color)
+}

@@ -1,0 +1,135 @@
+.explore-type-container{
+    margin: 3rem 0 4rem 0;
+}
+.explore-type{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 30px;
+  padding: 0px 20px;
+ 
+}
+
+.explore-type .type-container{
+    margin-top: 1.5rem;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+   
+    
+}
+.type-info{
+    position: absolute;
+    color: var(--p-color);
+    width: 100%;
+    height: 30%;
+    padding: .5rem 0 0 1rem;
+    background-color: rgba(0, 0, 0, .5);
+bottom: 0;
+border-radius: 0 0 1rem 1rem;
+transition: height .2 ease-in;
+}
+.type-container .type-info h4{
+    display: none;
+}
+
+.type-container:hover .type-info h3,
+.type-container:hover .type-info p
+{
+    display: none;
+}
+.type-container:hover .type-info h4{
+    display: block;
+}
+.type-container:hover .type-info {
+    height: 20%;
+    padding: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.type-info h3{
+    font-size: 24px;
+}
+
+.type-info p{
+    text-transform: capitalize;
+}
+
+.type-img{
+    height: 100%;
+}
+
+
+.type-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+.explore-heading
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* ================================================================ */
+@media (min-width: 565px) and (max-width:994px){
+    .explore-type{
+        gap: .7rem;
+    }
+    .explore-type .type-container{
+        width: 250px;
+       
+    }
+    .type-info{
+        height: 30%;
+        padding: .5em .5em .5em 1em;
+    }
+    .type-info h3{
+        font-size: 16px;
+    }
+    
+    .type-info p{
+        font-size: 12px;
+ 
+    }
+    .type-container .type-info h4{
+        font-size: 12px;
+    }
+}
+
+/* ================================================================ */
+@media (max-width:564px) {
+    .top-search-container{
+        padding: 12px;
+    }
+    .explore-type{
+        gap: .5rem;
+    }
+    .explore-type .type-container{
+        width: 200px;
+       
+    }
+    .type-info{
+        height: 35%;
+        padding: .5em .5em .5em 1em;
+    }
+    .type-info h3{
+        font-size: 16px;
+    }
+    
+    .type-info p{
+        font-size: 12px;
+ 
+    }
+    .type-container .type-info h4{
+        font-size: 12px;
+    }
+}

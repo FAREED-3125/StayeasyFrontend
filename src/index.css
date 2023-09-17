@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Font imports  */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;800&display=swap');
+
+/* Universal Styling */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none !important;
+    text-decoration: none !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* Body Styling */
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--p-color);
+    width: 100vw;
+    height: 100dvh;
+
 }
+
+
+/* Variable Decalration */
+:root{
+    --p-color: #ffffff;
+    --s-color: #C70039;
+    --g-color:#727070;
+    --g1-color: #D0D0D0;
+    --s1-color: #FF3D74;
+    --y-color: #F39F5A;
+    --p1-color: #F0F0F0;
+    --g2-color: #4A4A4A;
+    --b-color: #F3F5FF;
+    --b1-color: #5780E8;
+    --gr-color: #00C036;
+    --gr2-color: #E4FFEC;
+    --r-color: red;
+    --r2-color: #ffeaea;
+}
+
+/* rootstyling */
+#root{
+    width: 100%;
+   min-height: 100dvh;
+}
+
+/* //Button styling */
+.btn{
+    width: 9em ;
+    height: 3em ;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .2rem;
+  }

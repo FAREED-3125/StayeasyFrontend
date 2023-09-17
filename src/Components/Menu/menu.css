@@ -1,0 +1,99 @@
+.menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    width: 100%;
+   
+}
+
+.linksm{
+    color: var(--g-color);
+    padding: .5rem;
+    width: max-content;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    gap: 5px;
+    position: relative;
+    
+}
+.display-menus{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    align-items: flex-end ;
+    justify-items: flex-end;
+}
+.linksm svg path{
+    stroke: var(--g-color);
+}
+.linksm:hover
+{
+    color: var(--s-color);
+}
+.linksm:hover svg path
+{
+    color: var(--s-color);
+    stroke: var(--s-color);
+}
+
+.linksm.active{
+ color: var(--s-color);
+}
+.linksm{
+    overflow: hidden;
+}
+.linksm.active svg path{
+    stroke: var(--s-color);
+    color: var(--s-color);
+   }
+   .linksm::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--s-color);
+    bottom: 0;
+    transform: translateX(-100%);
+    transition: all .2s ease-in-out;
+   }
+
+.linksm.active::before{
+    content: "";
+    position: absolute;
+    transform: translateX(0);
+    width: 100%;
+    height: 3px;
+    background-color: var(--s-color);
+    bottom: 0;
+}
+/* ================================================== */
+@media (min-width: 565px) and (max-width: 994px){
+   .linksm{
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .linksm:hover svg path
+{
+    color: var(--s-color);
+    stroke: var(--s-color);
+}
+.linksm.active svg path{
+    stroke: var(--s-color);
+    color: var(--s-color);
+   }
+
+   .menu-container{
+    justify-content: flex-end;
+   }
+
+     }
+/* ===================================================================== */
+
+@media (max-width: 638px) {
+    .menu-container{
+        display: none;
+    }
+}

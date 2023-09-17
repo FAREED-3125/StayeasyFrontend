@@ -1,0 +1,19 @@
+.search-any{
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.search-any svg{
+    font-size: 100px;
+    color: var(--g1-color);
+}
+
+.search-any p{
+    font-size: 15px;
+    color: var(--g-color);
+}

@@ -1,0 +1,318 @@
+.bookform-container{
+  width: 80%;
+  margin: 3rem auto;
+  position: relative;
+}
+
+form{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr  1fr;
+    gap: 1rem
+}
+.calendarWrap{
+  margin: 0 auto;
+   
+}
+
+form label span{
+    color: var(--g-color);
+}
+
+form label .input{
+    width: 100%;
+    height: 3rem;
+    font-size: 20px;
+    padding-left: .5em;
+    color: var(--g-color);
+}
+ 
+.relative{
+    position: relative;
+}
+
+Form label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.roomsGuests p{
+    font-size: 13px;
+    margin-top: 5px;
+}
+.randg h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.randg h4 span:nth-child(2n + 1){
+    background: linear-gradient(to right,var(--s1-color),var(--s-color));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.input-Guest-childrens{
+    width: 100%;
+    position: absolute;
+    background-color: var(--p-color);
+    padding-top: .5rem ;
+    border-radius: .5rem;
+
+}
+
+.input-children{
+    width: 0%;
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+}
+.input-Guest-childrens .form-inputs label{
+    color: var(--g-color);
+}
+
+.roomsGuests{
+    display: flex;
+    flex-direction: column;
+}
+.randg{
+    display: flex;
+    justify-content: space-around;
+    color: var(--g-color);
+}
+.randg span{
+    color: var(--s-color)
+}
+
+.calendarWrap{
+    width: 100%;
+}
+
+.calender-wrapper{
+    width: 100%;
+}
+.rdrCalendarWrapper{
+width: 100%;
+}
+
+.rdrMonth{
+    width: 100% !important;
+}
+.date-btn .btn,
+.filter-btn .btn{
+    width: 50px;  
+    height: 30px;
+    border: none;  
+    background-color: var(--s-color);
+    color: var(--p-color);
+    margin: .5rem 0 .5rem auto;
+   
+}
+
+.rdrDayNumber span:after{
+    background: var(--s-color) !important;
+}
+
+.date-btn,.filter-btn{
+    width: 100%;
+}
+
+
+label .input:focus{
+    border: 2px solid var(--s-color);
+    color: var(--g-color);
+   
+   
+}
+
+
+.search-btn{
+    width: 100%;
+    height: 2.5em;
+    margin-top: 1em;
+
+}
+.search-btn input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background:linear-gradient(to right,var(--s1-color),var(--s-color));
+    color: var(--p-color);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: .3rem;
+}
+.form-inputs{
+    width: 100%;
+   margin-top: 10px;
+    
+}
+.form-inputs label{
+    margin-left: 10%;
+}
+.input-inner{
+    width: 80%;
+    margin: auto;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+}
+.input-inner .inner-btn{
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: .2rem;
+    background: linear-gradient(to right,var(--s1-color),var(--s-color));
+    color: var(--p-color);
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-inner h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit-reset-input{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.submit-reset-input .sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:90px;
+    margin: 1rem 0;
+    padding: .5rem 1rem;
+}
+.ant-picker{
+    height: 3rem;
+}
+/* ====================================================================================== */
+@media (max-width: 564px){
+    .bookform-container{
+        width: 100%;
+        margin-top: 1rem;
+      padding: 0em 1em 1em 1em
+    }
+.bookform-container Form{
+    flex-direction: column;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    gap: 0;
+}
+
+.bookform-container Form label{
+    margin-top: 1em;
+}
+.no-margint{
+    margin-top: 0;
+}
+.randg{
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0px;
+    color: var(--g-color);
+}
+
+label span{
+  color: var(--g-color);
+  font-size: 15px;
+}
+form label .input{
+    width: 100%;
+  
+    font-size: 20px;
+    padding-left: .5em;
+
+}
+.search-btn{
+    width: 100%;
+    height: 2.5em;
+    margin-top: 1em;
+    
+
+}
+.search-btn input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: linear-gradient(to right,var(--s1-color),var(--s-color));
+    color: var(--p-color);
+    font-size: 16px;
+    font-weight: 600
+}
+.form-inputs{
+    width: 100%;
+   margin-top: 10px;
+    
+}
+.form-inputs label{
+    margin-left: 10%;
+}
+.input-inner{
+    width: 80%;
+    margin: auto;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+}
+.input-inner .inner-btn{
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--s-color);
+    color: var(--p-color);
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-inner h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit-reset-input{
+    padding: 2em 0 1em 0;
+    display: flex;
+    justify-content: space-evenly
+}
+
+
+.submit-reset-input .sub{
+    margin:  0;
+    width: 130px;
+    padding: 1rem 1.5rem;
+}
+  
+.relative .input-Guest-childrens{
+    position: relative !important;
+}
+
+}
+
+/* /========================================================================================== */
+@media (max-width: 994px) and (min-width: 565px) {
+ .bookform-container{
+    width: 95%;
+ }
+ form{
+    grid-template-columns: 1fr 1fr 1fr;
+ }
+ .search-btn{
+    grid-column-start: 2 ;
+    grid-column-end: 3;
+ }
+
+}
+

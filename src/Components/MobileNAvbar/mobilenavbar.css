@@ -1,0 +1,82 @@
+.mobile-navbar{
+    display: none;
+}
+.mlink{
+    position: relative;
+}
+.mlink svg path{
+    stroke: var(--g-color);
+}
+/* ===================================================================================== */
+@media (min-width: 565px) and (max-width: 994px) {
+    .mobile-navbar{
+        display: none;
+    }
+}
+/* ========================================================================== */
+@media (max-width: 564px) {
+    .mobile-navbar
+    {
+        display: block;
+    }
+    .mobile-menus{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: stretch;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+.mobile-navbar{
+    width: 100%;
+    height: 3em;
+    background-color: var(--p-color);
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid var(--g-color);
+}
+
+.mlink.active{
+    color: var(--s-color);
+   }
+   .mlink{
+       overflow: hidden;
+   }
+   .mlink.active svg path{
+       stroke: var(--s-color);
+       color: var(--s-color);
+      }
+      .mlink::before{
+       content: "";
+       position: absolute;
+       width: 100%;
+       height: 3px;
+       background-color: var(--s-color);
+       top: 0;
+       scale: 0;
+       transition: all .3s ease-in-out;
+      }
+   
+   .mlink.active::before{
+       content: "";
+       position: absolute;
+       border-radius: 5px;
+      scale: 1;
+       width: 100%;
+       height: 3px;
+       background-color: var(--s-color);
+       bottom: 0;
+   }
+
+.mlink{
+    color: var(--g-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.active, .active svg path{
+    color: var(--s-color);
+    stroke: var(--s-color);
+}
+}

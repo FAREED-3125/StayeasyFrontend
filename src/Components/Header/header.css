@@ -1,0 +1,106 @@
+.header-container{
+  width: 100%;
+  padding: 1em 2.5em;
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  background-color: rgba(255, 255, 255, .9 );
+ position: sticky;
+ top: 0;
+ z-index: 100;
+
+}
+.log-con{
+    display: flex;
+}
+
+.logo{
+ display: grid;
+ grid-template-columns: 1fr;
+ 
+}
+.header-container .logo h3{
+  font-size: 2em;
+  background: linear-gradient(to right,var(--s1-color),var(--s-color));
+  font-weight: 800;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-container .logo p{
+  font-size: 12px;
+  color: var(--g-color)
+}
+.btn-primary{
+  border: 2px solid var(--s-color);
+ 
+  background-color: var(--p-color);
+  cursor: pointer;
+}
+.btn-primary a{
+   color: var(--s-color);
+}
+.btn-second a{
+  color: var(--p-color);
+}
+.btn-second{
+border: none;
+background: linear-gradient(to right,var(--s1-color),var(--s-color));
+
+cursor: pointer;
+}
+.login-signup-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-self: center;
+  justify-self: flex-end;
+  gap: 1rem;
+ 
+}
+/* ========================================================================== */
+
+@media (max-width: 638px) {
+   .header-container .logout{
+    display: none;
+   }
+  .header-container{
+   grid-template-columns: 1fr;
+  }
+  .header-container .logo h3{
+    font-size: 1.5em;
+  }
+
+  .header-container .logo p{
+    font-size: 10px;
+    margin-right: 5px;
+  }
+  .logo{
+   text-align: center;
+  }
+  .callus{
+    display: none;
+    margin: 0;
+  }
+  .login-signup-container{
+    display: none;
+  }
+  .menu{
+    display: none;
+  }
+
+}
+/* ==================================================================== */
+@media (min-width: 639px) and (max-width: 994px){
+  .login-signup-container {
+    display: none;
+  }
+  .header-container .logout{
+    display: none;
+   }
+.header-container{
+  grid-template-columns:  1fr 60%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+ }

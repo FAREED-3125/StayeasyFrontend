@@ -1,0 +1,247 @@
+.review-container {
+  padding-top: 2rem;
+}
+
+.review-container h4:first-child {
+  font-weight: 600;
+  color: var(--g2-color);
+
+  display: flex;
+  align-items: center;
+}
+
+.re-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.re-head h4:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  justify-content: center;
+}
+
+.hot-sho2 {
+  padding-top: 0.3rem;
+  color: var(--g2-color);
+  font-size: 13px;
+  
+}
+.re-head h4:nth-child(2) span span {
+  font-size: 19px;
+}
+.post-review-container {
+  padding: 2.5rem 0 2rem 0;
+}
+
+.post-review-container h4{
+     color: var(--g2-color);
+}
+
+.review{
+    padding: 2.5rem 0 0 0 ;
+
+}
+.review h4{
+  color: var(--g2-color);
+  padding-bottom: 1rem;
+
+}
+.review .rev-cont{
+    background-color: var(--b-color);
+    border-radius: .3rem;
+    padding: .5rem;
+    margin-bottom: .5rem;
+
+}
+ .re-content{
+  width: 100%;
+  height: auto;
+  transition: all .8s ease-in-out;
+  overflow: hidden;
+  position: relative;
+ }
+
+ .re-content::before{
+    content: "";
+    width: 100%;
+    height: 3rem;
+    background: linear-gradient(to bottom,transparent,var(--p-color));
+    position: absolute;
+    bottom: 0;
+
+    
+ }
+
+.review .rev-cont .name-rat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.review .rev-cont .name-rat .icon-n,.icon-rat2{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon-n p {
+  font-weight: 400;
+}
+.rev-content{
+    color: var(--g-color);
+    font-size: 14px;
+}
+
+.icon-n svg{
+  font-size: 20px;
+}
+.see-rev.btn-primary{
+    width: 100%;
+    color: var(--p-color);
+    margin-top: 1rem;
+    background-color: var(--b1-color);
+    border: none
+}
+.icon-n p:nth-child(2){
+  color: var(--g2-color);
+}
+
+.icon-rat2 p:nth-child(2){
+    color: var(--g-color);
+}
+.post-review-container h4 {
+  font-weight: 600;
+  color: var(--g2-color);
+  padding-bottom: 1rem;
+}
+.re-bot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 0 .5rem 0;
+}
+
+.post-review-container .re-cont {
+  background-color: var(--b-color);
+  padding: 0.3rem;
+
+  border-radius: 0.5rem;
+}
+.post-review-container textarea {
+  width: 100%;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+.rat-spe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom:  1rem;
+}
+
+.re-bot .post-link {
+  padding: 0.5rem 0.7rem;
+  background-color: var(--p-color);
+  margin-right: .5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .3rem;
+ 
+
+}
+
+.re-post{
+    padding: .5rem 1rem;
+    text-transform: capitalize;
+    background-color: var(--b1-color);
+    color: var(--p-color);
+    border-radius: .3rem;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+.re-bot .post-link svg{
+   font-size: 24px; 
+}  
+.prem {
+  padding: 0.3rem 0.3rem;
+  color: var(--y-color);
+  background-color: #fffbe7;
+  border: 2px solid var(--y-color);
+  border-radius: 1rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.affd {
+  padding: 0.3rem 0.3rem;
+  color: var(--gr-color);
+  background-color: var(--gr2-color);
+  border: 2px solid var(--gr-color);
+  border-radius: 1rem;
+}
+.re-head h4:nth-child(2) .span2 {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--g-color);
+}
+.rating-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.rat-line {
+  display: grid;
+  grid-template-columns: 40px 1fr 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-1 h3 {
+  font-size: 15px;
+}
+
+.rat-l {
+  width: 100%;
+  height: 8px;
+  background-color: var(--b-color);
+  border-radius: 10px;
+  position: relative;
+}
+
+.rat-l1 {
+  height: 8px;
+  left: 0;
+  position: absolute;
+ 
+  background:  linear-gradient(to right,var(--b-color),var(--b1-color));
+  border-radius: 10px;
+}
+
+.hotel-dis .stayInfo .filter-container {
+  width: 100%;
+  transform: translateY(0) !important;
+  min-height: fit-content;
+  background-color: var(--p-color);
+  padding: 0.3rem;
+  display: none;
+  position: static;
+  height: fit-content;
+}
+.hotel-dis .stayInfo .filter-container .book-form {
+  background-color: var(--b-color);
+}

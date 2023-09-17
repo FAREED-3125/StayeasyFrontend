@@ -1,0 +1,22 @@
+.home-container{
+   width: 100%;
+  min-height:  100dvh;
+}
+
+@media (max-width:  475px) {
+    .home-container{
+       height: 100dvh;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .home-container main{
+        overflow-x: hidden;
+        overflow-y: auto;
+        flex-grow: 1;
+     
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
