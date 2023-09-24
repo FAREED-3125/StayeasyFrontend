@@ -6,7 +6,7 @@ import { FaFacebookF, FaGoogle, FaTwitter } from "react-icons/fa";
 import axios from "axios";
 import { AuthContextProvider } from "../../Context/AuthContext";
 import { AuthOpt } from "../../Context/AuthContext";
-import { Fetch_url } from "./useFetch";
+import { Fetch_url } from "../../hooks/useFetch";
 
 
 const Signup = ({ toggleForm,setLoading}) => {

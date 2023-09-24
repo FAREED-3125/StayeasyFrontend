@@ -7,7 +7,7 @@ import { useFetch } from "../../hooks/useFetch";
 import axios from "axios";
 import { AuthContextProvider } from "../../Context/AuthContext";
 import { AuthOpt } from "../../Context/AuthContext";
-import { Fetch_url } from "./useFetch";
+import { Fetch_url } from "../../hooks/useFetch";
 
 
 const Signin = ({toggleForm,setLoading}) => {
