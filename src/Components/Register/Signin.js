@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 
 //icon imports
 import { FaFacebookF, FaGoogle, FaTwitter } from "react-icons/fa";
-import { useFetch } from "../../hooks/useFetch";
 import axios from "axios";
 import { AuthContextProvider } from "../../Context/AuthContext";
 import { AuthOpt } from "../../Context/AuthContext";

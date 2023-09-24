@@ -14,7 +14,8 @@ import { AuthContextProvider } from "../../Context/AuthContext";
 const Register = () => {
   const location = useLocation();
   const {authInfo,dispatch} = useContext(AuthContextProvider);
-  
+  console.log(authInfo)
+  const [formLoading,setFLoading] = useState(false);
   const sigup = new URLSearchParams(location.search).get('value');
   const [isSignup, setIsSignup] =  useState(sigup === 'signup' ? true :false) ; 
  const [loading,setLoading] = useState(false)
@@ -33,11 +34,15 @@ const Register = () => {
         <Signup
           toggleForm={toggleForm}
           setLoading={setLoading}
+          formLoading={formLoading}
+          setFLoading={setFLoading}
        
         />
         <Signin
           toggleForm={toggleForm}
           setLoading={setLoading}
+          formLoading={formLoading}
+          setFLoading={setFLoading}
 
         />
        
