@@ -191,7 +191,7 @@ label .input:focus{
     height: 3rem;
 }
 /* ====================================================================================== */
-@media (max-width: 564px){
+@media (max-width: 638px){
     .bookform-container{
         width: 100%;
         margin-top: 1rem;
@@ -302,7 +302,7 @@ form label .input{
 }
 
 /* /========================================================================================== */
-@media (max-width: 994px) and (min-width: 565px) {
+@media (max-width: 994px) and (min-width: 635px) {
  .bookform-container{
     width: 95%;
  }

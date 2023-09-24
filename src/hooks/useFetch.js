@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-
+export const Fetch_url = "https://stayeasyappbackend.onrender.com/api"
 
 export const useFetch = (url) => {
   const [data, setData] = useState([]);
@@ -12,7 +12,7 @@ export const useFetch = (url) => {
       setLoading(true);
 
       try {
-        const response = await axios.get(`/${url}`);
+        const response = await axios.get(`${Fetch_url}/${url}`);
         setData(response.data)
       } catch (err) {
         seterr(err);

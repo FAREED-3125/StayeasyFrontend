@@ -110,6 +110,30 @@
     
 }
 
+.room-no-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   overflow: auto;
+   gap: 15px;
+}
+
+.room-de-cont{
+    font-weight: 500;
+    color: var(--g2-color);
+}
+.ro-cont-payment{
+   width: 100px;
+   height: 2.5rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-shrink: 0;
+    background-color: var(--p-color);
+    border-radius: .3rem;
+    border: 2px solid var(--b1-color);
+}
+
 @media (max-width: 638px) {
     .payment-container{
         width: 95%;

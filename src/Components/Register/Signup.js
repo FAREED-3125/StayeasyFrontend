@@ -6,6 +6,8 @@ import { FaFacebookF, FaGoogle, FaTwitter } from "react-icons/fa";
 import axios from "axios";
 import { AuthContextProvider } from "../../Context/AuthContext";
 import { AuthOpt } from "../../Context/AuthContext";
+import { Fetch_url } from "./useFetch";
+
 
 const Signup = ({ toggleForm,setLoading}) => {
   const {authInfo,dispatch} = useContext(AuthContextProvider);
@@ -17,7 +19,7 @@ const Signup = ({ toggleForm,setLoading}) => {
   const handleSignupFunc = async(e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/Auth/signup',{email,password,username});
+      const response = await axios.post(`${Fetch_url}/Auth/signup`,{email,password,username});
       setLoading(true)
       dispatch({type: AuthOpt.LOGIN_USER,payload: response.data})
       setLoading(false)

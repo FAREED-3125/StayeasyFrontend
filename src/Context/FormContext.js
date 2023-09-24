@@ -13,7 +13,9 @@ const INITIAL_STATE = JSON.parse(localStorage.getItem("book_info")) || {
   children: undefined,
   price: 0,
   days: 1,
-  betDates: []
+  betDates: [],
+  roomnumber:[],
+
 };
 const BookReducer = (state, action) => {
   switch (action.type) {
@@ -28,6 +30,10 @@ const BookReducer = (state, action) => {
         JSON.stringify({...state,...payload})
       );
       return {...state,...payload};
+
+      case 'reset': 
+      localStorage.removeItem('book_info');
+      return INITIAL_STATE;
     default:
       return INITIAL_STATE;
   }

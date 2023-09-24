@@ -33,12 +33,12 @@ const Search = () => {
   // const max1 = URLFetchFunc().get("max");
 
   const location = useLocation();
-  const guest1 = bookInfo?.guest
-  const rooms1 = bookInfo?.rooms
+  const guest1 = bookInfo?.guest || 1
+  const rooms1 = bookInfo?.rooms || 1
   const city = URLFetchFunc().get("city");
-  const adult1 = bookInfo?.adults;
-  const child1 = bookInfo?.children
-  const from = bookInfo?.from
+  const adult1 = bookInfo?.adults || 1
+  const child1 = bookInfo?.children || 0
+  const from = bookInfo?.from 
   const to = bookInfo?.to
   const min1 = URLFetchFunc().get("min");
   const max1 = URLFetchFunc().get("max");
@@ -48,7 +48,7 @@ const Search = () => {
     return new URLSearchParams(location.search)
   }
   const { data, loading, err } = useFetch(
-    `Hotels/search?city=${city?.toLowerCase()}${
+    `Hotels/search?city=${city?.toLowerCase().trim()}${
       from ? `&fromdate=${from}` : ""
     }${to ? `&todate=${to}` : ""}${guest1 ? `&guest=${guest1}` : ""}${
       adult1 ? `&adult=${adult1}` : ""
@@ -75,8 +75,8 @@ const Search = () => {
       <div className="search-container">
         {loading ? (
           <Loading
-            width={"30px"}
-            height={"30px"}
+            width={"15px"}
+            height={"15px"}
             width2={"100vw"}
             height2={"100dvh"}
           />

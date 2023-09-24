@@ -15,8 +15,10 @@ import React, {
   import Minmax from "./Minmax";
   import Guestrooms2 from "./Guestrooms2";
 import { useNavigate } from "react-router-dom";
+import { BookContextProvider } from "../../Context/FormContext";
   export const filterFormcontext2 = createContext();
 const Filter2 = ({edit,setEdit,state,setState}) => {
+  const {bookInfo,dispatch} = useContext(BookContextProvider)
     const [rooms, setRooms] = useState(0);
     const [adults, setAdults] = useState(0);
     const [children, setChildren] = useState(0);
@@ -26,7 +28,7 @@ const Filter2 = ({edit,setEdit,state,setState}) => {
     const [range, setRange] = useState([
       {
         startDate: new Date(),
-        endDate: addDays(new Date(), 7),
+        endDate: addDays(new Date(), bookInfo?.days || 7),
         key: "selection",
       },
     ]);
