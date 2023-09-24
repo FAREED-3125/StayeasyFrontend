@@ -23,7 +23,8 @@ const Booking = () => {
         );
         if (addrerr) throw addrerr;
         console.log(addrdata);
-        return location.reload();
+         window.location.reload();
+         return
       } catch (err) {
         console.log(err.message);
       }

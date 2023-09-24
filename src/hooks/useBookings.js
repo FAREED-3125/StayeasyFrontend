@@ -32,7 +32,6 @@ export const DeleteBookings = async (id, userid) => {
     const response = await axios.delete(
       `${Fetch_url}/Bookings/deletebooking/${id}/${userid}`
     );
-    console.log(data);
   } catch (err) {
     console.log(err);
     return{data: null,err: Error("Error deleting")};
