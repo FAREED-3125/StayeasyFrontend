@@ -14,7 +14,7 @@ import { AuthContextProvider } from "../../Context/AuthContext";
 const Register = () => {
   const location = useLocation();
   const {authInfo,dispatch} = useContext(AuthContextProvider);
-  console.log(authInfo)
+  
   const sigup = new URLSearchParams(location.search).get('value');
   const [isSignup, setIsSignup] =  useState(sigup === 'signup' ? true :false) ; 
  const [loading,setLoading] = useState(false)

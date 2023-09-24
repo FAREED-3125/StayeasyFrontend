@@ -24,7 +24,6 @@ const RoomsHot = ({ resData, dataOffer }) => {
       });
     }
 
-    console.log(roomnos)
   }, [roomnos]);
 
   const roomaddfunc = (number,roid) => {
@@ -42,10 +41,6 @@ const RoomsHot = ({ resData, dataOffer }) => {
     const newRoomnos = roomnos.filter((r) => r !== number);
     setroomnos(newRoomnos);
   };
- console.log({
-  roomid,
-  roomnos
- })
 
   return (
     <div className="room-container">

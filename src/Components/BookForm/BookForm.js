@@ -26,7 +26,7 @@ const BookForm = ({ width }) => {
       key: "selection",
     },
   ]);
-  console.log(bookInfo)
+
   const [city,setCity] = useState("")
 
   const reopen = useRef();
