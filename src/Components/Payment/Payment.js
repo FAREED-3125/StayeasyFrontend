@@ -22,7 +22,7 @@ const Payment = ({ data, state1, editpay, setpay }) => {
  
   const createBookings = () => {
     if(window.confirm("Are you sure you want to Proceed?")){
-      if(bookInfo?.from && bookInfo?.to && bookInfo?.guest)
+      if(bookInfo?.from !== "--/--/----" && bookInfo?.to !== "--/--/----" && bookInfo?.guest)
     {if(phone >= 10){
         try{
       setloading(true)
