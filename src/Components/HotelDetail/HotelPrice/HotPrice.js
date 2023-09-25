@@ -108,7 +108,7 @@ const HotPrice = ({ data, state1, setpay }) => {
             if (authInfo?.user?.username) {
               if(bookInfo?.from !== "--/--/----" && bookInfo?.to !== "--/--/----" && bookInfo?.guest)
               {setpay(true)}else{
-                window.alert("Enter all fields.")
+                window.alert("Invalid dates,please update Dates.")
               }
             } else {
               if (
