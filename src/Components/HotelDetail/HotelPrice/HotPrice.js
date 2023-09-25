@@ -106,7 +106,10 @@ const HotPrice = ({ data, state1, setpay }) => {
           className="btn btn-primary"
           onClick={() => {
             if (authInfo?.user?.username) {
-              setpay(true);
+              if(bookInfo?.from !== "--/--/----" && bookInfo?.to !== "--/--/----" && bookInfo?.guest)
+              {setpay(true)}else{
+                window.alert("Enter all fields.")
+              }
             } else {
               if (
                 window.confirm(
