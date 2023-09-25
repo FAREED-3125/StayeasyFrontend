@@ -22,7 +22,8 @@ const Payment = ({ data, state1, editpay, setpay }) => {
  
   const createBookings = () => {
     if(window.confirm("Are you sure you want to Proceed?")){
-    if(phone >= 10){
+      if(bookInfo?.from && bookInfo?.to && bookInfo?.guest)
+    {if(phone >= 10){
         try{
       setloading(true)
          const body =  {
@@ -49,11 +50,12 @@ const Payment = ({ data, state1, editpay, setpay }) => {
     }
     }else{
       console.log("phone not valid");
+    }}else{
+      window.alert("Enter all fields.")
     }
   }else{
     return
   }
-  
  
   }
 
